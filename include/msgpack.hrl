@@ -77,7 +77,7 @@
           interface = ?DEFAULT_MAP_FORMAT :: jiffy | jsx,
           map_unpack_fun = ?DEFAULT_MAP_UNPACKER_FUN :: msgpack_map_unpacker(),
           impl = erlang      :: erlang | nif,
-          allow_atom = none  :: none | pack, %% allows atom when packing
+          allow_atom = pack  :: none | pack, %% allows atom when packing
           enable_str = false :: boolean(), %% true for new spec
           ext_packer = undefined   :: msgpack_ext_packer()   | undefined,
           ext_unpacker = undefined :: msgpack_ext_unpacker() | undefined,
@@ -95,7 +95,7 @@
           interface = ?DEFAULT_MAP_FORMAT :: format_type(),
           map_unpack_fun = ?DEFAULT_MAP_UNPACKER_FUN :: msgpack_map_unpacker(),
           impl = erlang      :: erlang | nif,
-          allow_atom = none  :: none | pack, %% allows atom when packing
+          allow_atom = pack  :: none | pack, %% allows atom when packing
           enable_str = false :: boolean(), %% true for new spec
           ext_packer = undefined   :: msgpack_ext_packer()   | undefined,
           ext_unpacker = undefined :: msgpack_ext_unpacker() | undefined,
